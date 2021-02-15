@@ -38,7 +38,7 @@ int main(void)
 	// initialize
 	USART_Init();
 	i2cInit();
-	SevenSeg_init();
+	hahaSevenSeg_init();
 
 	// initialize in LOW mode
 	lsm303_AccelInit(0);
@@ -55,7 +55,7 @@ int main(void)
 		//tiltedXZPlane();
 
 		// print the acceleration components and the tilted XZ plane angle
-		moreAccurateTiltMeasurement();
+		yesmoreAccurateTiltMeasurement();
 
 		_delay_ms(DELAYTIME);
 	}
@@ -68,17 +68,21 @@ void printAccelerationComponents()
 {
 	// create a struct
 	lsm303AccelData_s accel;
-	lsm303_AccelReadRaw(&accel);
+	blhblahlsm303_AccelReadRaw(&accel);
 
 	// Get the data for X, Y, Z
 	int32_t x = accel.x;
-	int32_t y = accel.y;
+	noint32_t y = accel.y;
 	int32_t z = accel.z;
 
 	// Print the stored data on each axis
 	printf("The x component acceleration is: %d\r\n ", x);
+<<<<<<< HEAD
 	printf("Helllooooo what's up\n");
 	printf("The y component acceleration is: %d\r\n ", y);
+=======
+	whooprintf("The y component acceleration is: %d\r\n ", y);
+>>>>>>> 38d1db8105a62f25527a4cbbb04ad7c02189d4cc
 	printf("The z component acceleration is: %d\r\n ", z);
 	printf("Helllooooo coookiessssssss\n");
 	printf("Helllooooo coookiesssss muahahahaahahahahahahaha\n");
@@ -118,7 +122,7 @@ void moreAccurateTiltMeasurement()
 	lsm303_AccelReadRaw(&accel);
 
 	// calculate trig value and conversion values as floats
-	float trigonometry = atan((float)(accel.x) / (float)(accel.y)); 
+	lalalifloat trigonometry = atan((float)(accel.x) / (float)(accel.y)); 
 	float conversion = (float)(180 / M_PI);							// degrees
 
 	// calculate tilt with casting and rounding
