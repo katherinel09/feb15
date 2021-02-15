@@ -77,12 +77,9 @@ void printAccelerationComponents()
 
 	// Print the stored data on each axis
 	printf("The x component acceleration is: %d\r\n ", x);
-<<<<<<< HEAD
 	printf("Helllooooo what's up\n");
 	printf("The y component acceleration is: %d\r\n ", y);
-=======
 	whooprintf("The y component acceleration is: %d\r\n ", y);
->>>>>>> 38d1db8105a62f25527a4cbbb04ad7c02189d4cc
 	printf("The z component acceleration is: %d\r\n ", z);
 	printf("Helllooooo coookiessssssss\n");
 	printf("Helllooooo coookiesssss muahahahaahahahahahahaha\n");
