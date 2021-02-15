@@ -77,8 +77,11 @@ void printAccelerationComponents()
 
 	// Print the stored data on each axis
 	printf("The x component acceleration is: %d\r\n ", x);
+	printf("Helllooooo what's up\n");
 	printf("The y component acceleration is: %d\r\n ", y);
 	printf("The z component acceleration is: %d\r\n ", z);
+	printf("Helllooooo coookiessssssss\n");
+	printf("Helllooooo coookiesssss muahahahaahahahahahahaha\n");
 }
 
 /* Print the angle of the XZ Plane and display on the seven seg display */
